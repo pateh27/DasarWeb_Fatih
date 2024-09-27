@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum jQuery Selector</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){        
+                $("button").click(function(){
+                    $("h2").hide();
+                    $(".subjudul").hide();
+                    $("#paragraf").hide();
+                    $("#paragraf.dua").hide();
+                    $("div p.paragraf").hide();
+                });
+        });
+    </script>
+</head>
+<body>
+    <h2> Ini adalah Judul Bab</h2>
+    <h3 class="subjudul">Ini Adalah Sub Judul Bab</h3>
+    <p id="paragraf">Ini Adalah Paragraf</p>
+    <p id="paragraf" class="dua">Ini Adalah Paragraf Dua</p>
+    <div>
+        <p class="paragraf">Ini Adalah Paragraf</p>
+    </div>
+    <p> Ini paragarf yang akan tetap di tampilkan</p>
+    <button>Klik Saya!</button>
+</body>
+</html>
