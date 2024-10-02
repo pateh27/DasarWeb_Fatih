@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>siwa$siswa Siswa</title>
     <link rel="stylesheet" type="text/css"  href="styletugas2.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#dataTable").slideToggle("slow");
+                $("rataRataUmur").slideToggle("slow");
+            });
+        });
+    </script>
 </head>
 <body>
     <h2>Data Siswa</h2>
-    
+    <div id="flip" style="cursor:pointer">Tampilkan Data Siswa</div>
+    <div id="dataTable" style="display:none">
     <table>
         <tr>
         <th>Nama</th>

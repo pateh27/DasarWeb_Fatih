@@ -5,7 +5,7 @@
     echo "<br>";
     echo $_SERVER['HTTP_HOST'];
     echo "<br>";
-    echo $_SERVER['HTTP_REFERER'];
+    echo isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'No Referer';
     echo "<br>";
     echo $_SERVER['HTTP_USER_AGENT'];
     echo "<br>";
