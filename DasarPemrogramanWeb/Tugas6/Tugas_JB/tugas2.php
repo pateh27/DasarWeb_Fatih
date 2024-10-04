@@ -17,7 +17,7 @@
 </head>
 <body>
     <h2>Data Siswa</h2>
-    <div id="flip" style="cursor:pointer">Tampilkan Data Siswa</div>
+    <div id="flip" style="cursor: pointer;">Tampilkan Data Siswa</div>
     <div id="dataTable" style="display:none">
     <table>
         <tr>
