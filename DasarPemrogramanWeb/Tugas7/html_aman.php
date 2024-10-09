@@ -26,18 +26,18 @@
            echo "Nama: " . $input . "<br>";
         }
     ?>
-    <?php 
-        // soal nomer 4.2
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
-            $email = $_POST['email'];
+        <?php 
+            // soal nomer 4.2
+            if ($_SERVER["REQUEST_METHOD"] == "POST"){
+                $email = $_POST['email'];
 
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                echo "Email: " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "<br>.";
-            }else{
-                echo "Email tidak valid.<br>";
+                if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+                    echo "Email: " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "<br>.";
+                }else{
+                    echo "Email tidak valid.<br>";
+                }
             }
-        }
-    ?>
+        ?>
 
 </body>
 </html>
