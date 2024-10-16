@@ -19,7 +19,7 @@
             if(move_uploaded_file($_FILES['files']['tmp_name'][$i], $targetFile)){
                 echo "File $fileName berhasil diunggah <br>";
             }else{
-                echo "Gagal mengunggah fuke $fileName <br>";
+                echo "Gagal mengunggah file $fileName <br>";
             }
         }
     }else{
