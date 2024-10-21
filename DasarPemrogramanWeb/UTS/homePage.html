@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: '16px'
+        },
+        extend: {
+          colors: {
+            primary: '#0284c7',
+            dark: '#020617',
+          },
+          screens: {
+            '2xl': '1320px',
+          },
+        },
+      },
+    }
+    </script>
+</head>
+<body>
+  <header class="bg-gray-100 py-4 fixed w-full z-10">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold text-primary">Muhammad Al-Fatih</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="homePage.html" class="text-dark hover:text-primary">Home</a></li>
+          <li><a href="#about" class="text-dark hover:text-primary">About Me</a></li>
+          <li><a href="#contact" class="text-dark hover:text-primary">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section Start -->
+  <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md-text-xl">
+            Halo Semua <span class="ml-animate-waving-hand">👋</span>, saya 
+            <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Muhammad Al-Fatih Ulima Robby</span>
+          </h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text">Mahasiswa Politeknik Negeri Malang</h2>
+          <p class="font-medium text-sky-500 mb-10 leading-relaxed">UTS Web dan desain 
+            mudah bukan.<span class="text-dark font-semibold">Bukan!</span></p>
+          <a href="#contact" class="text-base font semi-bold text-white bg-sky-600 py-3 px-8 rounded-full
+            hover:shadow-lg hover:opcacity-80 transition duration-300 esse-in-out">Ikuti Saya!</a>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2 lg:mt-16">
+          <div class="relative mt-10 lg:right-0">
+            <img src="tes.png" alt="Muhammad Al-Fatih" class="max-w-2xl mx-auto bg-center"/>
+            <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+              <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#0284c7" d="M54.4,-33.8C65.6,-12,66.5,13.5,55.7,25.5C44.9,37.5,22.5,36.1,
+                4.4,33.6C-13.7,31.1,-27.5,27.4,-37.5,15.8C-47.6,4.2,-54,-15.3,-47.1,
+                -34.7C-40.2,-54,-20.1,-73.2,0.7,-73.7C21.6,-74.1,43.2,-55.7,54.4,-33.8Z" 
+                transform="translate(100 100) scale(1)" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="pt-36 pb-32">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10">
+          <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+          <h2 class="font-bold text-dark mb-5 max-w-md">Biodata</h2>
+          <p class="font-medium text-base text-slate-500 max-w-xl">
+            Saya adalah mahasiswa semester 3 di Politeknik Negeri Malang yang sedang mengerjakan Ujian Tengah Semester
+            (UTS) Web dan Desain. Saya lahir di Malang pada tanggal 27-juni-2004. 
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between mb-10">
+        <div class="w-full md:w-1/2 px-4 mb-4">
+          <div class="bg-sky-500 rounded-md p-5">
+            <h3 class="font-bold uppercase text-center text-white mb-4">Hobies</h3>
+            <ul class="font-medium text-base text-white text-center">
+              <li>Sepak Bola</li>
+              <li>Off-Road</li>
+              <li>Membaca</li>
+              <li>Modif Motor</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mb-4">
+          <div class="bg-sky-500 rounded-md p-5">
+            <h3 class="font-bold uppercase text-center text-white mb-4">Skill</h3>
+            <p class="font-medium text-base text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestias. Veritatis, voluptate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="flex flex-col items-start px-4">
+        <p class="font-medium text-base text-slate-500 mb-6">Mari berteman dengan saya melalui media sosial saya!</p>
+        <div class="flex space-x-6">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/moh_al_fattih/?hl=id" target="_blank">
+            <img src="instagram.svg" alt="Instagram" class="w-6 h-6"/>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6281359546301?text=Halo,%20Saya%20dari%20website%20mu" target="_blank">
+            <img src="whatsapp.svg" alt="WhatsApp" class="w-6 h-6"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

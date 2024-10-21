@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="styleLogin.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login">
-            <form action="loginProcess.php" method="post" enctype="multipart/form-data">
-                <h2>Login</h2>
-                <hr>
-                <p>Login UTS</p>
-                <label for="username">User</label>
-                <input type="text" placeholder="Enter User">
-                <label for="password">Password</label>
-                <input type="password" placeholder="Password">
-                <button type="submit">Login</button>
-            </form>
-        </div>
-        <div class="right">
-            <img src="2.png" alt="">
-        </div>
-    </div>
+    <h2>Login Form</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label><br>
+      <input type="text" id="loginUsername" required><br><br>
+  
+      <label for="password">Password:</label><br>
+      <input type="password" id="loginPassword" required><br><br>
+  
+      <button type="submit">Login</button>
+    </form>
+  
+    <script src="register.js"></script>
 </body>
 </html>

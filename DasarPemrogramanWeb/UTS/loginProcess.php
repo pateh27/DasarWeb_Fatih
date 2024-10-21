@@ -1,22 +1,13 @@
 <?php 
-   session_start();
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-   $username = "fatih";
-   $password = "270604";
-
-   if($_SERVER['REQUEST_METHOD'] == "POST"){
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-
-        if($username == $username && $password == $password){
-            $_SESSION['login'] = true;
-            $_SESSION['username'] = $username;
-            header("Location: homePage.php");
-            exit();
-        }else{
-            header("Location: loginPage.php");
-            exit();
-        }
-   }
-
+    if ($username == "fatih" && $password == "1234") {
+        session_start();
+        $_SESSION["username"] = $username;
+        $_SESSION["status"] = 'login';
+        echo "Anda berhasili login. Silahkan Menuju <a href='homePage.html'>Halaman Home</a>";
+    } else {
+        echo "Username atau Password anda salah. Silahkan login lagi <a href='Login.html'>Halaman Login</a> kembali.";
+    }
 ?>
